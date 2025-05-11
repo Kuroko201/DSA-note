@@ -22,7 +22,7 @@
 
 class Node{ // linked list
     public:
-        int age; // data
+        int age; // the data, we can later use "(ClassObject)->age" to get or assgin a value.
         Node* next; // link to the next node
         
         Node(int value, Node* next1){ // constructer
@@ -34,7 +34,7 @@ class Node{ // linked list
 
 void print(Node* node){  // print the linked list
     while(node != NULL){ // when not reach the end of the linked list.
-        std::cout << node->age << "\n";
+        std::cout << node->age << "\n";  // use "->age" to get the value
         node = node->next;
     }
 }
@@ -57,7 +57,7 @@ int main(){
 #include<iostream>
 
 struct Node{ // linked list
-    int age;
+    int age; we can later use "(ClassObject)->age" to get or assgin a value.
     struct Node* next; // link to the next node
 };
 
