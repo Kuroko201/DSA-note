@@ -41,7 +41,7 @@ void print(Node* node){  // print the linked list
 }
 
 int main(){
-   //use  "new"  to allocate a memory to a linked list with datatype Node
+   //use  "new"  to allocate memory to a linked list with datatype Node
    Node* M5 = new Node(50,NULL); // END OF THE NODE
    Node* M4 = new Node(40,M5); // point to the next memory location M5
    Node* M3 = new Node(30,M4); // point to the next memory location M4
