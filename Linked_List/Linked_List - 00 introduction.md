@@ -15,8 +15,43 @@
   In linked list, we don't know where are the elements. We need pointers to store the memory location of each value. And link them.
   
   In linked list, two things will be stored. One is the Value, one is a pointer that point to the next memory location.
-  
-## Sample example of linked list (C++)
+
+## Sample example of linked list (C++) 1
+```
+#include<iostream>
+
+class Node{ // linked list
+    public:
+        int age; // data
+        Node* next; // link to the next node
+        
+        Node(int value, Node* next1){ // constructer
+            age = value;
+            next = next1;
+        }
+};
+
+
+void print(Node* node){  // print the linked list
+    while(node != NULL){ // when not reach the end of the linked list.
+        std::cout << node->age << "\n";
+        node = node->next;
+    }
+}
+
+int main(){
+   //use  "new"  to allocate a memory to a linked list with datatype Node
+   Node* M5 = new Node(50,NULL); // END OF THE NODE
+   Node* M4 = new Node(40,M5); // point to the next memory location M5
+   Node* M3 = new Node(30,M4); // point to the next memory location M4
+   Node* M2 = new Node(20,M3); // point to the next memory location M3
+   Node* M1 = new Node(10,M2); // Start of the Node, point to the next memory location M2.
+   print(M1); // print the linked list
+   return 0;
+}
+```
+
+## Sample example of linked list (C++) 2
 ```
 #include<iostream>
 
