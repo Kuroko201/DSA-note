@@ -46,7 +46,9 @@ int main(){
    Node* M3 = new Node(30,M4); // point to the next memory location M4
    Node* M2 = new Node(20,M3); // point to the next memory location M3
    Node* M1 = new Node(10,M2); // Start of the Node, point to the next memory location M2.
-   print(M1); // print the linked list
+   print(M1); // print the linked list from the starting point
+   // we need to remember the starting point to print the whole linked list
+
    delete M1; // release memory.
    return 0;
 }
@@ -72,8 +74,8 @@ void print(Node* node){  // print the linked list
 int main(){
    Node* head = new Node();//use new to allocate a memory to a linked list with datatype Node. Use a ptr(*) "head" to point at the start of the linked list
    Node* curr = head; // Create a new ptr curr to point at the current position. 
-   //it's basically a two pointer. One pointer point at the head and remain still. One pointer will keep pointing diffrent position.
-   
+   // we need to remember the starting point to print the whole linked list
+
    curr -> age = 10; // assgin value the the current node.
    curr-> next = new Node(); // create more node.
    curr = curr->next; // Move to the next position(node) of linked next. This node will store the memory location to the next value
@@ -132,7 +134,7 @@ int main(){
    int arr[] = {1,3,5,7,9};
    int size = sizeof(arr) / sizeof(arr[0]);
    Node* head = arr_to_Linked_List(arr, size);
-   print(head);
+   print(head); // print the linked list from the starting point
    return 0;
 }
 ```
