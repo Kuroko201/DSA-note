@@ -53,7 +53,7 @@ int main(){
 ```
 <img src="https://github.com/Kuroko201/DSA-note/blob/main/Linked_List/pic/linked_List%20-%2001.png?raw=true" width="600px">
 
-## Simple example of linked list (C++) 2 - using class struct
+## Simple example of linked list (C++) 2 - using struct
 ```
 #include<iostream>
 
@@ -91,5 +91,48 @@ int main(){
    return 0;
 }
 ```
+## Simple example of linked list (C++) 3 - using function
+```
+#include<iostream>
 
+class Node{
+    public:
+        int age;
+        Node* next;
+        
+        Node(int value, Node* next1){
+            age = value;
+            next = next1;
+        }
+        Node(int data){
+            age = data;
+            next = nullptr;
+        }
+};
 
+Node* arr_to_Linked_List(int arr[], int arr_size){
+            Node* head = new Node(arr[0]);
+            Node* curr = head;
+            for(int i = 1; i < arr_size; i++){
+                Node* temp = new Node(arr[i]); // make new node with value arr[i]
+                curr->next = temp; // store the pointer that point to the next memory location
+                curr = temp; // move to the next new node.
+            }
+            return head;
+        }
+        
+void print(Node* node){  // print the linked list
+    while(node != NULL){ // when not reach the end of the linked list.
+        std::cout << node->age << "\n";
+        node = node->next;
+    }
+}
+
+int main(){
+   int arr[] = {1,3,5,7,9};
+   int size = sizeof(arr) / sizeof(arr[0]);
+   Node* head = arr_to_Linked_List(arr, size);
+   print(head);
+   return 0;
+}
+```
