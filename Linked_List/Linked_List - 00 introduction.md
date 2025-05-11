@@ -47,6 +47,7 @@ int main(){
    Node* M2 = new Node(20,M3); // point to the next memory location M3
    Node* M1 = new Node(10,M2); // Start of the Node, point to the next memory location M2.
    print(M1); // print the linked list
+   delete M1; // release memory.
    return 0;
 }
 ```
