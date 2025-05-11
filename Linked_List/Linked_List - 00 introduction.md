@@ -7,6 +7,14 @@
   2. Array will be used when you know how many element you need.  array[100] > you know there will be 100 elements.
   3. Array can apply arithmetic operations. > Sorting alogrithm...
 
+## Linked list is not contiguous:
+  for example: [10,20,30,40,50]
+  In array, we can access the value by arr[0], arr[1], arr[3]...  We exactly know where is the first element, the second element.
+  
+  In linked list, we don't know where are the elements. We need pointers to store the memory location of each value. And link them.
+  
+  In linked list, two things will be stored. One is the Value, One is the pointer to the next memory location.
+  
 ## Sample example of linked list (C++)
 ```
 #include<iostream>
@@ -46,6 +54,5 @@ int main(){
 }
 ```
 
-<div><img src="https://github.com/Kuroko201/DSA-note/blob/8dc38b3450fd9e970f9fa9116e781a4081f171a2/Linked_List/pic/IMG_4695.jpg?raw=true" width="500px"></div>
-
+<img src="https://github.com/Kuroko201/DSA-note/blob/8dc38b3450fd9e970f9fa9116e781a4081f171a2/Linked_List/pic/IMG_4695.jpg?raw=true" width="500px">
 
