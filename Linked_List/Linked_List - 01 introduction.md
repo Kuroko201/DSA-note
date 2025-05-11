@@ -106,8 +106,8 @@ class Node{
             age = value;
             next = next1;
         }
-        Node(int data){
-            age = data;
+        Node(int value){
+            age = value;
             next = nullptr;
         }
 };
