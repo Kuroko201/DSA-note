@@ -8,6 +8,9 @@
   3. Array can apply arithmetic operations. > Sorting alogrithm...
 */
 
+// Example of a linked list
+
+
 #include<iostream>
 
 struct Node{ // linked list
@@ -15,12 +18,13 @@ struct Node{ // linked list
     struct Node* next; // link to the next node
 };
 
-void print(Node* node){
+void print(Node* node){ // print the linked list
     while(node != NULL){ // when not reach the end of the linked list.
         std::cout << node->age << "\n";
         node = node->next;
     }
 }
+
 int main(){
    Node* head = new Node();//use new to allocate a memory to a linked list with datatype Node. Use a ptr(*) "head" to point at the start of the linked list
    Node* curr = head; // Create a new ptr curr to point at the current position. 
