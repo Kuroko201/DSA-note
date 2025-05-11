@@ -45,4 +45,7 @@ int main(){
    return 0;
 }
 ```
-![](https://github.com/Kuroko201/DSA-note/blob/8dc38b3450fd9e970f9fa9116e781a4081f171a2/Linked_List/pic/IMG_4695.jpg?raw=true =250x250)
+
+<div><img src="https://github.com/Kuroko201/DSA-note/blob/8dc38b3450fd9e970f9fa9116e781a4081f171a2/Linked_List/pic/IMG_4695.jpg?raw=true" width="500px"></div>
+
+
