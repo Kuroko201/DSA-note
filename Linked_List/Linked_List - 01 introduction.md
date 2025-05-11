@@ -32,7 +32,6 @@ class Node{ // linked list
         }
 };
 
-
 void print(Node* node){  // print the linked list
     while(node != NULL){ // when not reach the end of the linked list.
         std::cout << node->age << "\n";  // use "->age" to get the value
