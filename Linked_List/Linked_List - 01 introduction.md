@@ -16,7 +16,7 @@
   
   In linked list, two things will be stored. One is the Value, one is a pointer that point to the next memory location.
 
-## Sample example of linked list (C++) 1
+## Sample example of linked list (C++) 1 - using class
 ```
 #include<iostream>
 
@@ -52,7 +52,7 @@ int main(){
 }
 ```
 
-## Sample example of linked list (C++) 2
+## Sample example of linked list (C++) 2 - using class struct
 ```
 #include<iostream>
 
