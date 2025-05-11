@@ -10,7 +10,7 @@
 ## Linked list is not contiguous:
   for example: [10,20,30,40,50]
   
-  In array, we can access the value by arr[0], arr[1], arr[3]...  We exactly know where is the first element, the second element.
+  In array, we can access the value by arr[0], arr[1], arr[3]...  We know exactly where is the first element, the second element.
   
   In linked list, we don't know where are the elements. We need pointers to store the memory location of each value. And link them.
   
