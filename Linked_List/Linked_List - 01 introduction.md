@@ -14,7 +14,7 @@
   
   In linked list, we don't know where are the elements. We need pointers to store the memory location of each value. And link them.
   
-  In linked list, two things will be stored. One is the Value, one is a pointer that point to the next memory location.
+  In linked list, <b> two things will be stored. One is the Value, one is a pointer that point to the next memory location. </b>
 
 
 ## Simple example of linked list (C++) 1 - using class
