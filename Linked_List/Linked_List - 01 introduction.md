@@ -1,11 +1,12 @@
 ## Why we use linked list?
   1. When we don't know how many element will be in the list
-  2. Constant-time insertions/deletions from the list O(1), while array takes O(N)
+  2. Constant-time insertions/deletions O(1), while array takes O(N)
      
 ## When we use array?
   1. Array will be used when need random access to elements
   2. Array will be used when you know how many element you need.  array[100] > you know there will be 100 elements.
   3. Array can apply arithmetic operations. > Sorting alogrithm...
+  4. Random Access. You know you need to get somethings from array[i] (O(1)). In array, once you know the position, we can easy access that data. In linked list, we have to run the whole linked list (O(N))
 
 ## Linked list is not contiguous:
   for example: [10,20,30,40,50]
