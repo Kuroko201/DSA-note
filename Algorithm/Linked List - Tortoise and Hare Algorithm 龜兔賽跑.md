@@ -8,8 +8,10 @@ Find whether a loop exist in a linked list
   
   3.If there is loop existed, the fast pointer will be the same position as the slow pointer eventually.
 
-## Sample Code (C++, LeetCode 141 Linked List Cycle)
+## Linked_List with cycle existed:
+<img src="https://github.com/Kuroko201/DSA-note/blob/main/Linked_List/pic/linked_list_cycle.png?raw=true" width="600px">
 
+## Sample Code (C++, LeetCode 141 Linked List Cycle)
 ```
 /**
  * Definition for singly-linked list.
