@@ -2,9 +2,9 @@
 Find whether a loop exist in a linked list
 
 ## Method:
-  1.We will first creat two pointer: Node* slow = head,  Node* fast = head.
+  1.We will first creat two pointer: Node* slow = head;  Node* fast = head;
   
-  2.Then, we move these pointer at different speed: slow = slow->next; fast = fast->next->next;
+  2.Then, we move these pointer at different speed: slow = slow->next;  fast = fast->next->next;
   
   3.If there is loop existed, the fast pointer will be the same position as the slow pointer eventually.
 
