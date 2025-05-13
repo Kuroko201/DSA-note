@@ -32,7 +32,10 @@ public:
     }
 };
 ```
-### 2. using prev
+### 2. Using prev
+<img src="https://github.com/Kuroko201/DSA-note/blob/main/Linked_List/pic/leetcode206.png?raw=true">
+<img src="https://github.com/Kuroko201/DSA-note/blob/main/Linked_List/pic/leetcode206(2).png?raw=true">
+
 ```
 /**
  * Definition for singly-linked list.
