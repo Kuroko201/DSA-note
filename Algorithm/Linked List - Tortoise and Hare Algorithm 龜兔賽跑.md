@@ -1,10 +1,10 @@
 ## Usage：
 Find whether a loop exist in a linked list
-
+Find the middle of the linked list
 ## Method:
-  1.We will first creat two pointer: Node* slow = head;  Node* fast = head;
+  1.We will first creat two pointer: Node* slow = head,  Node* fast = head.
   
-  2.Then, we move these pointer at different speed: slow = slow->next;  fast = fast->next->next;
+  2.Then, we move these pointer at different speed: slow = slow->next; fast = fast->next->next;
   
   3.If there is loop existed, the fast pointer will be the same position as the slow pointer eventually.
 
@@ -34,6 +34,31 @@ public:
             if(slow == fast)return true;
         }
         return false;
+    }
+};
+```
+## Sample Code (C++, LeetCode 876 Middle of the Linked List)
+```
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+        while(fast != NULL && fast->next != NULL){
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        return slow;
     }
 };
 ```
