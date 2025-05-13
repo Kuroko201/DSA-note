@@ -49,8 +49,17 @@ int main(){
    print(M1); // print the linked list from the starting point
    // we need to remember the starting point to print the whole linked list
 
+   /*We can re-order the Node like this: M1>M2>M4>M5>M3, just move some pointer, easiler than array. That is why insertions/deletions O(1), while array takes O(N)
+   Node* M3 = new Node(30,NULL); // END OF THE NODE
+   Node* M5 = new Node(50,M3);
+   Node* M4 = new Node(40,M5); 
+   Node* M2 = new Node(20,M4); 
+   Node* M1 = new Node(10,M2); // Start of the Node
+   print(M1); 
+   */
    delete M1; // release memory.
    return 0;
+
 }
 ```
 <img src="https://github.com/Kuroko201/DSA-note/blob/main/Linked_List/pic/linked_List%20-%2001.png?raw=true" width="600px">
