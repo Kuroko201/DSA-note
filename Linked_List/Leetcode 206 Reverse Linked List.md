@@ -13,19 +13,22 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode* prev = NULL;
-        ListNode* curr = head;
-
-        while(curr != NULL)
-        {
-           ListNode* nextNode = curr->next; 
-           curr->next = prev;
-           prev = curr;
-           curr = nextNode;
-
+        if (head == NULL)return NULL;
+        vector<int> list = {};
+        while(head != NULL){
+            list.push_back(head->val);
+            head = head->next;
         }
-        return prev;
-        
+        ListNode* reverse = new ListNode();
+        ListNode* curr = reverse;
+
+        for(int i = list.size()-1; i > -1; i--){
+            curr->next = new ListNode(list[i]);
+            curr = curr->next;
+        }
+        ListNode* ans = reverse->next;
+        delete reverse;
+        return ans;
     }
 };
 ```
