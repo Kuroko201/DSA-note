@@ -57,6 +57,7 @@ int main(){
    Node* M1 = new Node(10,M2); // Start of the Node
    print(M1); 
    */
+
    delete M1; // release memory.
    return 0;
 
