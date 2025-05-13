@@ -55,9 +55,9 @@ public:
 
         while(curr != NULL){
            ListNode* nextNode = curr->next; // record the next node first.
-           curr->next = prev; // link backward [loop 1: link to NULL],[loop 2: 1],[loop 3: 2]
-           prev = curr; // update the prev(changing the starting point of prev). [loop 1: prev update from NULL to 1 (NULL > 1)], [loop 2: 1 update to 2], [loop 3: 2 update to 3]
-           curr = nextNode; // move to the next node.
+           curr->next = prev; // link backward 
+           prev = curr; // update the prev(changing the starting point of prev).
+           curr = nextNode; // move to the next node
         }
         return prev;
     }
